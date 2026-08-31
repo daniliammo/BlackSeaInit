@@ -6,6 +6,7 @@ SRC = основа.c процессы.c динамический_список.c
 all: $(TARGET)
 
 $(TARGET): $(SRC)
+	mkdir -p Собранное
 	$(CC) $(CFLAGS) $(SRC) -o $(TARGET)
 
 clean:
